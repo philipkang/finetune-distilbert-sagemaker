@@ -8,7 +8,7 @@ import os
 import pandas as pd
 
 
-s3_path = 's3://huggingface-multiclass-textclassffication/training_data/newsCorpora.csv'
+s3_path = 's3://<data_bucket>/training_data/newsCorpora.csv'
 df = pd.read_csv(s3_path, sep='\t', names=['ID','TITLE','URL','PUBLISHER','CATEGORY','STORY','HOSTNAME','TIMESTAMP'])
 
 df = df[['TITLE','CATEGORY']]
