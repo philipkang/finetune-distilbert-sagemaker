@@ -50,4 +50,10 @@ The deployed model can be used for real-time inference:
 •	Input text is sent to the endpoint
 •	The model returns the predicted category and probabilities
 
+API Access
+Enable API access via API Gateway trigged a Lambda Function 
+•	Create Lambda Function ‘llm-endpoint-invoke-function’
+•	Create API Gateway to integrate request to invoke the lambda
+
+
 This fine-tuning process leverages SageMaker's capabilities to streamline the training, deployment, and inference stages of developing a custom text classification model based on DistilBERT.
