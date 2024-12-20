@@ -51,6 +51,10 @@ The deployed model can be used for real-time inference:
 •	Input text is sent to the endpoint
 •	The model returns the predicted category and probabilities
 
+Load Testing
+•	Generate load testing benchmarking data with load-test.py
+•	Create new load testing with SageMaker Inference Recommender
+
 API Access
 Enable API access via API Gateway trigged a Lambda Function 
 •	Create Lambda Function ‘llm-endpoint-invoke-function’
