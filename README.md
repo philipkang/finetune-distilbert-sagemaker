@@ -1,7 +1,7 @@
-README.MD
+#README.MD
 This project demonstrates the process of fine-tuning a DistilBERT model for multi-class text classification using Amazon SageMaker. The process can be summarized in the following steps:
 
-Data Preparation and Model Definition
+##Data Preparation and Model Definition
 The script.py file defines the core components:
 •	Data loading from an S3 bucket
 •	Custom NewsDataset class for handling the text data
@@ -12,7 +12,7 @@ The model architecture includes:
 •	Additional linear layers for classification
 •	Dropout for regularization
 
-Training Setup
+##Training Setup
 The TrainingNotebook.ipynb sets up the SageMaker training job:
 •	Installs required libraries
 •	Configures the SageMaker session and role
@@ -26,7 +26,7 @@ The training job is configured to use:
 •	A single ml.p2.xlarge instance
 •	PyTorch 1.8 and Transformers 4.6
 
-Model Training
+##Model Training
 The training process in script.py includes:
 •	Splitting data into training and validation sets
 •	Creating DataLoader objects for efficient batching
@@ -35,7 +35,7 @@ The training process in script.py includes:
 The model is trained to classify text into four categories:
 •	Business, Science, Entertainment, and Health
 
-Model Deployment
+##Model Deployment
 After training, the Deployment.ipynb notebook handles model deployment:
 •	Creates a HuggingFaceModel object with the trained model artifacts
 •	Deploys the model to a SageMaker endpoint (ml.m5.xlarge instance)
@@ -45,7 +45,7 @@ The inference.py script defines functions for:
 •	Making predictions
 •	Formatting output
 
-Inference
+##Inference
 The deployed model can be used for real-time inference:
 •	Input text is sent to the endpoint
 •	The model returns the predicted category and probabilities
